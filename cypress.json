@@ -1,0 +1,19 @@
+{
+  "env": {
+    "testEnvironment": {
+      "kibanaUrl": "https://kibana.example.com/",
+      "elasticsearchUrl": "https://elasticsearch.example.com/"
+    }
+  },
+  "ignoreTestFiles": "*.js",
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "test-results/functional-tests.xml",
+    "toConsole": false,
+    "outputs": false,
+    "attachments": false
+  },
+  "viewportWidth": 1280,
+  "viewportHeight": 800,
+  "video": false
+}

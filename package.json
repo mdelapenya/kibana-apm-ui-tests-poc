@@ -1,0 +1,40 @@
+{
+  "name": "apm-ui-tests-poc",
+  "version": "1.0.0",
+  "description": "Functional tests for the APM UI",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^3.3.1",
+    "cypress-cucumber-preprocessor": "^1.12.0",
+    "eslint": "^6.0.1",
+    "eslint-plugin-cypress": "^2.2.1",
+    "prettier": "1.18.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "scripts": {
+    "format": "prettier --write '**/*.js'",
+    "format:ci": "npm run lint && prettier --check '**/*.js'",
+    "lint": "./node_modules/.bin/eslint -c cypress/.eslintrc.json cypress/**/*.js",
+    "test": "./node_modules/.bin/cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdelapenya/kibana-apm-ui-tests-poc.git"
+  },
+  "keywords": [
+    "tests",
+    "bdd",
+    "elasticsearch",
+    "elastic",
+    "kibana"
+  ],
+  "author": "Observability Automation Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdelapenya/kibana-apm-ui-tests-poc/issues"
+  },
+  "homepage": "https://github.com/mdelapenya/kibana-apm-ui-tests-poc#readme"
+}
