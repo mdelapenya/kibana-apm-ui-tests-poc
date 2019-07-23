@@ -9,7 +9,8 @@
     "cypress-cucumber-preprocessor": "^1.12.0",
     "eslint": "^6.0.1",
     "eslint-plugin-cypress": "^2.2.1",
-    "prettier": "1.18.2"
+    "prettier": "1.18.2",
+    "testcontainers": "^1.1.19"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
