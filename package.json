@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "@elastic/elasticsearch": "^7.2.0",
     "chai": "^4.2.0",
     "eslint": "^6.0.1",
     "mocha": "^6.2.0",
@@ -15,7 +16,7 @@
     "format": "prettier --write '**/*.js'",
     "format:ci": "npm run lint && prettier --check '**/*.js'",
     "lint": "./node_modules/.bin/eslint **/*.js",
-    "test": "mocha"
+    "test": "mocha --timeout 100000"
   },
   "repository": {
     "type": "git",
