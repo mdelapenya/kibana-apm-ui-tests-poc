@@ -5,9 +5,14 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "eslint": "^6.0.1",
+    "prettier": "1.18.2",
     "testcontainers": "^1.2.0"
   },
   "scripts": {
+    "format": "prettier --write '**/*.js'",
+    "format:ci": "npm run lint && prettier --check '**/*.js'",
+    "lint": "./node_modules/.bin/eslint **/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
